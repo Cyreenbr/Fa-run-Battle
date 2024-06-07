@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    background-image: url('../assets/backBat.jpg');
+    background-size: cover; /* La taille de l'image de fond couvrira toute la fenêtre */
+    background-position: center; /* Positionnement de l'image de fond */
+    background-repeat: no-repeat; 
+}
+
+.scene{
+    display: flex; 
+    justify-content:space-around;  
+    align-items: center;  
+    height: 80vh;
+   
+}
+#dashboard {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+  justify-content: space-around; /* Ajoute de l'espace entre les éléments */
+  width: 100%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+  }
+#warriorsContainerBleu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px; /* Définir la largeur */
+    height: 280px; /* Définir la hauteur */
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur semi-transparente pour les cases */
+    border-radius: 20px;
+    padding-top: 15px;
+
+
+}
+#warriorsContainerRouge{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px; /* Définir la largeur */
+    height: 250px; /* Définir la hauteur */
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.5); /* Couleur semi-transparente pour les cases */
+    border-radius: 20px;
+    padding-top: 15px;
+
+
+
+
+}
+.container {
+  display: flex;
+  align-items: center; /* Pour aligner verticalement au centre */
+}
+#chatR
+{
+  margin-left:350px;
+}
+
+/* Styles pour la fenêtre modale */
+.modal {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    display:none; /* Par défaut, la fenêtre modale est cachée */
+    position: fixed; /* Position fixée par rapport à la vue du navigateur */
+    z-index: 1; /* Pour empiler la fenêtre modale au-dessus du reste du contenu */
+    left: 0;
+    top: 0;
+    width: 100%; /* La fenêtre modale occupe toute la largeur de l'écran */
+    height: 100%; /* La fenêtre modale occupe toute la hauteur de l'écran */
+    overflow: auto; /* Ajoute un défilement si nécessaire */
+    background-color: rgb(0,0,0); /* Couleur de fond noire avec opacité */
+    background-color: rgba(0,0,0,0.4); /* Couleur de fond noire avec opacité */
+  
+  }
+  
+  /* Contenu de la fenêtre modale */
+  .modal-content {
+    background-color: #8584b3;
+    margin: 15% auto; /* Centrez la fenêtre modale verticalement et horizontalement */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largeur de la fenêtre modale */
+    border-radius: 20px;
+  
+  }
+  #cont
+  {
+    flex-direction: column; 
+        display:flex;
+
+    align-items: center;
+  }
+  /* Bouton de fermeture */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #flex-container {
+    display: flex;
+    justify-content: space-between; /* Ajoute de l'espace entre les éléments */
+  }
+  .divRes
+  {
+    background-color:rgba(255, 255, 255, 0.5); /* Couleur semi-transparente pour les cases */
+    border-radius: 10px;
+    width: 100px;
+    height:40px;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  .btnEntrainer
+  {
+    width: 80px;
+    height:30px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+    
+  }
+ 
+  .btnEntrainer:hover{
+    background-color:lightsteelblue; /* Couleur de survol */
+
+
+  }
+  .btnEntrainer:active{
+    background-color: #367c39;
+    border-color: #367c39;
+  }
+  #btnDeplacer
+  {
+    display:flex;
+    justify-content: center;
+    margin-right: 200px;
+
+  }
+
+
+  .hov:hover,
+  .hov:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #title
+  {
+    text-align: center;
+    color: white;
+  }

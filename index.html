@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/chateau-style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/plateaux.css">
+
+    <title>La bataille de Faërun</title>
+</head>
+<body>
+  <h1 id="title">Jeu des batailles </h1>
+  <div class="scene"> 
+
+
+<div id="dashboard" >
+
+  <!--Dashboard chateau bleu-->
+    <div class="section">
+
+      <div id="ressourcesB" class="divRes" >
+        <p id="nbreResourcesB" >Ressources :3 </p>
+      </div>
+
+      <div id="warriorsContainerBleu" class="hov"></div>
+      <div class="container">
+<img src="assets/Chateau_bleu.png" alt=""width="150" height="150">
+
+
+       <div id="waitingListBleu"></div>
+
+      </div>
+       <button id="btnEntrainerBleu" class="btnEntrainer">Entrainer</button>
+
+    </div>
+
+  <!--Dashboard chateau rouge-->
+  
+    <div class="section">
+      <div id="ressourcesR" class="divRes">
+        <p id="nbreResourcesR">Ressources : 3</p>
+      </div>
+    
+      <div id="warriorsContainerRouge" class="hov"></div>
+      <div class="container">
+      <img src="assets/Chateau_rouge.png" alt=""width="150" height="150" id="">
+       <div id="waitingListRouge"></div>
+      </div>
+       <div></div>
+       <button id="btnEntrainerRouge" class="btnEntrainer">Entrainer</button>
+    </div> 
+
+</div>
+
+
+
+
+    <!--<div class="chateau-div">
+        <img src="Chateau_bleu.png"  class="chateau chateau-bleu" alt="Chateau_bleu">
+        
+
+    </div> --> 
+  <div class="section">
+
+   <div class="plateau"></div>
+  </div>
+  <!-- <div class="chateau-div">
+        <img src="Chateau_rouge.png" class="chateau chateau-rouge" alt="Chateau_rouge"> -->
+    
+   </div> 
+  
+   <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close">&times;</span>
+   <button id="btnDeplacer">Deplacer</button>
+   </div>
+   </div>
+
+   <div id="plateau">
+    <div id="carreau-0" class="carreau"></div>
+    <div id="carreau-1" class="carreau"></div>
+    <div id="carreau-2" class="carreau"></div>
+    <div id="carreau-3" class="carreau"></div>
+    <div id="carreau-4" class="carreau"></div>
+</div>
+<div id="equipeGa" class="modal">
+    <div class="modal-content">
+      <span id="closeTour">&times;</span>
+   <div id="attente"></div>
+   <div id="gagnante"></div>
+  <div id="cont">
+  <p id="texteEquipe"></p>
+  <button id="tourSuivant" style="margin-top: 10px;">Tour suivant</button>
+</div>
+</div>
+</div>
+
+
+</body>
+
+<script src="js/Chateau.js" ></script>
+<script src="js/Guerrier/guerrier.js" ></script>
+<script src="js/Guerrier/nain.js" ></script>
+<script src="js/Guerrier/chefNain.js" ></script>
+<script src="js/Guerrier/elfe.js" ></script>
+<script src="js/Guerrier/chefElfe.js" ></script>
+
+
+
+<script src="js/plateau.js" ></script>
+<script src="js/moteurDeJeu.js" ></script>
+<script src="js/index.js" ></script>
+
+</html>

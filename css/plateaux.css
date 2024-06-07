@@ -1,0 +1,18 @@
+#plateau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carreau {
+    width: 100px;
+    height: 100px;
+    background-color: #FFFFFF; /* Couleur des cases */
+    border: 1px solid #000000; /* Bordures des cases */
+    border-radius: 10px;
+
+   
+}
+.carreau:hover {
+    background-color: #FFFF00; /* Couleur de survol */
+    cursor: pointer; /* Curseur de la souris */
+}
